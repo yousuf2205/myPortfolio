@@ -13,7 +13,7 @@ const TypeWriterEffect = dynamic(() => import('react-typewriter-effect'), {
 export default function HeroBanner() {
   
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='home'>
         <div className='container'>
             <div className={styles.heroMain}>
                 <div>

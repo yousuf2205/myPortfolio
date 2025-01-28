@@ -36,10 +36,10 @@ export default function Header() {
                     <Link href='#home' className={`${styles.navLink}`}>Home</Link>
                     </li>
                     <li onClick={removeActive}>
-                    <Link href='#home' className={`${styles.navLink}`}>About</Link>
+                    <Link href='#about' className={`${styles.navLink}`}>About</Link>
                     </li>
                     <li onClick={removeActive}>
-                    <Link href='#home' className={`${styles.navLink}`}>Services</Link>
+                    <Link href='#services' className={`${styles.navLink}`}>Services</Link>
                     </li>
                     <li onClick={removeActive} className={styles.contact}>
                     <Link href='#home' className={`${styles.navLink}`}>Contact</Link>

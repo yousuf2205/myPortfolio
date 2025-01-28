@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Services() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='services'>
         <div className="container">
         <h2 className={styles.h2Services}>Services</h2>
             <div className={styles.servicesMain}>

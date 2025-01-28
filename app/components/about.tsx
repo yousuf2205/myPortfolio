@@ -8,7 +8,7 @@ import Card from './card';
 
 export default function About() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='about'>
         <div className="container">
             <div className={styles.aboutMain}>
                 <h2>Lets Know <span className={styles.h2Span}>About Me</span></h2>
