@@ -1,0 +1,50 @@
+.footer{
+    background-color: var(--dark-gray);
+    padding: 30px;
+}
+.footerMain{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.foooterh3{
+    color: var(--pimary-color);
+}
+.footerDiv2 ul{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:  10px;
+    color: var(--light-blue);
+    font-size: 20px;
+    font-family: var(--font-poppins-sans);
+}
+.emailBox{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   }
+   .EmailIcon{
+    background-color: transparent;
+    border: 1px solid var(--light-blue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 9px;
+   }
+   @media screen and (max-width: 768px){
+    .footerMain{
+        flex-direction: column;
+    }
+    .foooterh3{
+        font-size: 22px;
+    }
+    .emailh3{
+        font-size: 20px;
+    }
+    .footer{
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+   }

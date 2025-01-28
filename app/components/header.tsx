@@ -22,12 +22,14 @@ export default function Header() {
         <div className="container">
             <div className={styles.headerMain}>
                 <div className={styles.logo}>
+                    <Link href='/'>
                     <Image
                     src='/logo.svg'
                     alt="logo"
                     width={230}
                     height={100}
-                     />
+                     /></Link>
+
                 </div>
 
             <nav className={`${styles.navbar}`}>
@@ -42,7 +44,7 @@ export default function Header() {
                     <Link href='#services' className={`${styles.navLink}`}>Services</Link>
                     </li>
                     <li onClick={removeActive} className={styles.contact}>
-                    <Link href='#home' className={`${styles.navLink}`}>Contact</Link>
+                    <Link href='#contact' className={`${styles.navLink}`}>Contact</Link>
                     </li>
                     </ul>
 
