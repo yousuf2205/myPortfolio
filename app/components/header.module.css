@@ -1,0 +1,134 @@
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 222;
+    margin-top: 20px;
+}
+.headerMain{
+    width: 100%;
+    padding: 0 20px;
+    height: 100px;
+    background: transparent;
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 16px #b8e4ff8f;;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    max-width: 250px;
+}
+.btn{
+    max-width: 150px;
+    width: 100%;
+}
+.btn button{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid var(--light-blue);
+    border-radius: 60px;
+    color: var(--light-blue);
+    font-family: var(--font-poppins-sans);
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.btn button:hover{
+    color: var(--pimary-color);
+    border-color: var(--pimary-color);
+}
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 70px;
+  }
+  .navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    color: var(--light-blue);
+    font-family: var(--font-poppins-sans);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .navMenu li{
+    transition: all 0.3s ease-in-out;
+  }
+  .navMenu li:hover{
+    color: white;
+  }
+  .contact{
+    display: none;
+  }
+  @media screen and (max-width: 1024px){
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+
+    .bar {
+          background-color: var(--light-blue);
+          width: 20px;
+          height: 3px;
+          display: block;
+          margin: 5px;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+      }
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .navMenu{
+      position: absolute;
+      flex-direction: column;
+      gap: 0;
+      top: 100px;
+      left: -120%;
+      text-align: start;
+      width: 100%;
+      transition: 0.7s ease-in-out;
+      background-color: var(--dark-gray);
+      padding: 10px;
+      border-radius: 50px;
+    }
+    .contact{
+        display: block;
+    }
+    .navMenu.active{
+      left: 0;
+    }
+
+    .navMenu li {
+      margin: 16px 0;
+    }
+    .btn{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .logo img{
+        max-width: 200px;
+    }
+    .headerMain{
+      height: 70px;
+    }
+  }
+  @media screen and (max-width: 425px){
+    .logo img{
+      max-width: 150px;
+  }
+  }
+  
